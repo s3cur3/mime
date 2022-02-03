@@ -83,7 +83,7 @@ defmodule MIME do
     "image/bmp" => ["bmp"],
     "image/gif" => ["gif"],
     "image/heic" => ["heic", "hif"],
-    "image/heif" => ["heic", "hif"],
+    "image/heif" => ["heif", "hif"],
     "image/jpeg" => ["jpg", "jpeg"],
     "image/jxl" => ["jxl"],
     "image/png" => ["png"],
@@ -124,6 +124,7 @@ defmodule MIME do
     Map.merge(to_exts.(types), %{
       "3g2" => ["video/3gpp2"],
       "3gp" => ["video/3gpp"],
+      "hif" => ["image/heic"],
       "js" => ["text/javascript"],
       "xml" => ["text/xml"]
     })
